@@ -1,0 +1,504 @@
+
+.searchInputButton {
+    float: right;
+    margin-top: -45px;
+    padding-right: 20px;
+}
+
+@media (max-width: 568px) {
+    .searchInputButton {
+        float: right;
+        margin-top: -45px;
+        padding-right: 10px;
+    }
+}
+
+.cart_widget {
+    color: white;
+    position: fixed;
+    top: 70%;
+    right: 10px;
+    z-index: 11;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    background-image: linear-gradient(135deg, #50D5b7, #067D68);
+    opacity: 0.4;
+}
+
+.cart_widget:hover {
+    background-image: linear-gradient(135deg, #50D5b7, #067D68);
+    opacity: 1;
+}
+
+@media (max-width: 568px) {
+    .cart_widget {
+        color: white;
+        position: fixed;
+        top: 75%;
+        right: 10px;
+        z-index: 11;
+        border-radius: 10px;
+        text-align: center;
+        background-image: linear-gradient(135deg, #50D5b7, #067D68);
+        opacity: 0.4;
+    }
+
+    .cart_widget:hover {
+        background-image: linear-gradient(135deg, #50D5b7, #067D68);
+        opacity: 1;
+    }
+}
+
+.labelProfile {
+    font-size: 14px;
+    font-weight: 700;
+    padding-bottom: 10px;
+}
+
+.less_transparent {
+    opacity: 0.8
+}
+
+.less_transparent:hover {
+    opacity: 1;
+}
+
+.float {
+    position: relative;
+    box-shadow: 8px 8px 15px #CFDAE7;
+    z-index: 1;
+}
+
+.float:before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    background-image: linear-gradient(120deg, #f5fbff 25%, rgba(255, 255, 255, 0) 50%), linear-gradient(300deg, #ADBAC8 14%, rgba(255, 255, 255, 0) 40%);
+    z-index: -1;
+}
+
+.float:after {
+    content: ' ';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.center-all {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.zoom {
+    transition: transform .2s; /* Animation */
+}
+
+.zoom:hover {
+    transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    z-index: 10;
+}
+
+.zoom2 {
+    transition: transform 1s; /* Animation */
+}
+
+.zoom2:hover {
+    transform: scale(1.15); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.border {
+    border: 1px solid #EAEAEA;
+    border-radius: 8px;
+}
+
+.shadow2 {
+    box-shadow: 0 7px 30px -10px rgba(150, 170, 180, 0.5);
+}
+
+.shadow3 {
+    box-shadow: -3px 6px 15px #9fafc2;
+}
+
+.card1 {
+    padding: 30px;
+    background: linear-gradient(#fff, #fff);
+    max-width: 400px;
+    border-radius: 20px;
+    margin: 60px auto;
+}
+
+.card1:hover .card-button {
+    transform: translate(-50%, 50%);
+    opacity: 1;
+}
+
+.card-button {
+    transform: translate(-50%, 125%);
+    width: 50%;
+    border-radius: 1rem;
+    border: none;
+    background-color: #008bf8;
+    color: #fff;
+    font-size: 1rem;
+    padding: .5rem 1rem;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    opacity: 0;
+    transition: 0.3s ease-out;
+}
+
+.modal-responsive {
+    width: 70%;
+    height: auto;
+    min-height: 80%;
+    overflow-y: hidden;
+    border-radius: 20px;
+
+}
+
+@media (max-width: 768px) {
+    .modal-responsive {
+        width: 90%;
+        height: auto;
+        min-height: 70%;
+        overflow-y: hidden;
+        border-radius: 20px;
+    }
+}
+
+.icon-btn {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #cdcdcd;
+    background: white;
+    border-radius: 25px;
+    overflow: hidden;
+    position: relative;
+    transition: width 0.2s ease-in-out;
+    font-weight: 500;
+    font-family: inherit;
+}
+
+.add-btn:hover {
+    width: 120px;
+}
+
+.add-btn::before,
+.add-btn::after {
+    transition: width 0.2s ease-in-out, border-radius 0.2s ease-in-out;
+    content: "";
+    position: absolute;
+    height: 4px;
+    width: 10px;
+    top: calc(50% - 2px);
+    background: seagreen;
+}
+
+.add-btn::after {
+    right: 14px;
+    overflow: hidden;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+
+.add-btn::before {
+    left: 14px;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+}
+
+.icon-btn:focus {
+    outline: none;
+}
+
+.btn-txt {
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+
+.add-btn:hover::before,
+.add-btn:hover::after {
+    width: 4px;
+    border-radius: 2px;
+}
+
+.add-btn:hover .btn-txt {
+    opacity: 1;
+}
+
+.add-icon::after,
+.add-icon::before {
+    transition: all 0.2s ease-in-out;
+    content: "";
+    position: absolute;
+    height: 20px;
+    width: 2px;
+    top: calc(50% - 10px);
+    background: seagreen;
+    overflow: hidden;
+}
+
+.add-icon::before {
+    left: 22px;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+}
+
+.add-icon::after {
+    right: 22px;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+
+.add-btn:hover .add-icon::before {
+    left: 15px;
+    height: 4px;
+    top: calc(50% - 2px);
+}
+
+.add-btn:hover .add-icon::after {
+    right: 15px;
+    height: 4px;
+    top: calc(50% - 2px);
+}
+
+.inputGroup {
+    /*font-family: 'Segoe UI', sans-serif;*/
+    margin: 1em 0 1em 0;
+    position: relative;
+}
+
+.inputGroup input {
+    font-size: 100%;
+    padding: 0.8em;
+    outline: none;
+    border: 2px solid rgb(200, 200, 200);
+    background-color: transparent;
+    border-radius: 20px;
+    width: 100%;
+}
+
+.inputGroup label {
+    font-size: 100%;
+    position: absolute;
+    left: 0;
+    padding: 0.8em;
+    margin-left: 2em;
+    pointer-events: none;
+    transition: all 0.3s ease;
+    color: rgb(100, 100, 100);
+}
+
+.inputGroup :is(input:focus, input:valid) ~ label {
+    transform: translateY(-50%) scale(.9);
+    margin-left: 1.3em;
+    padding: 0.4em;
+    background-color: #fff;
+}
+
+.inputGroup :is(input:focus, input:valid) {
+    border-color: rgb(169, 169, 169);
+}
+
+.float1 {
+    position: relative;
+    box-shadow: 8px 8px 15px #9fafc2;
+    z-index: 1;
+}
+
+.float1:before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    background-image: linear-gradient(120deg, #f5fbff 25%, rgba(255, 255, 255, 0) 50%), linear-gradient(300deg, #ADBAC8 14%, rgba(255, 255, 255, 0) 40%);
+    z-index: -1;
+}
+
+.float1:after {
+    content: ' ';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.cuttedTextLine200 {
+    width: 200px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.cuttedText3Line {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -moz-box;
+    -moz-box-orient: vertical;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    line-clamp: 3;
+    max-width: 350px;
+}
+
+.display_grid {
+    display: grid;
+    padding-bottom: 7px;
+}
+
+.model_grid {
+    width: 200px;
+    display: block;
+    margin: 0 auto;
+    height: 170px;
+    aspect-ratio: 3/2;
+    object-fit: contain
+}
+
+.index_brand_grid {
+    margin-top: -50px;
+    padding: 5px;
+    height: 200px;
+    width: 250px;
+    aspect-ratio: 3/2;
+    object-fit: contain;
+}
+
+.price_nw {
+    width: 153px;
+    height: 42px;
+    left: 13px;
+    top: 15px;
+    position: absolute;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 100%;
+    color: rgba(99.88, 99.88, 99.88, 1);
+}
+
+.widget_same {
+    width: 284px;
+    height: 116px;
+    left: 14px;
+    top: 9px;
+    background-color: white;
+    box-shadow: 0 5px 14px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    position: relative;
+}
+
+.replace_heart_wishlist {
+    width: 38px;
+    height: 38px;
+    left: 235px;
+    top: 87px;
+    position: absolute;
+}
+
+.replace_cart_add {
+    width: 45px;
+    height: 45px;
+    left: 231px;
+    top: 130px;
+    position: absolute;
+}
+
+.widget_replace {
+    width: 284px;
+    height: 188px;
+    left: 14px;
+    top: 9px;
+    background-color: white;
+    box-shadow: 0 5px 14px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    position: relative;
+}
+
+.widget_replace_start {
+    width: 312px;
+    height: 216px;
+    background-color: white;
+    position: relative;
+}
+
+.price_replace_widget {
+    width: 161px;
+    height: 27px;
+    left: 16px;
+    top: 44px;
+    position: absolute;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 100%;
+    color: rgba(99.88, 99.88, 99.88, 1);
+}
+
+.brand_replace_widget {
+    width: 204px;
+    height: 14px;
+    left: 16px;
+    top: 87px;
+    position: absolute;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 100%;
+    color: rgba(66.45, 120.62, 201.88, 1);
+}
+
+.number_part_replace_widget {
+    width: 251px;
+    height: 15px;
+    left: 16px;
+    top: 13px;
+    position: absolute;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 100%;
+    color: rgba(128.61, 133.95, 147.69, 1);
+}
+
+.replace_widget_can_order {
+    width: 204px;
+    height: 15px;
+    left: 16px;
+    top: 133px;
+    position: absolute;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 100%;
+    color: rgba(204, 146.88, 0, 1);
+}
+
+.replace_widget_ready_to_pick {
+    width: 204px;
+    height: 14px;
+    left: 16px;
+    top: 157px;
+    position: absolute;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 100%;
+    color: #98C900;
+}
+
+.container_hover:hover > :not(:hover){
+    opacity: .4;
+    transform: scale(0.9);
+}
+.item_for_container_hover{
+    transition: .35s;
+    cursor: pointer;
+}
+.checkboxes{
+    display: flex;
+}
